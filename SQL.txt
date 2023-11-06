@@ -1,0 +1,1 @@
+select clientname, MONTH(Data.Date) as 'Month', SUM(amount) as 'SumAmount' from Data WHERE date BETWEEN '20170101' AND '20171231' GROUP BY MONTH(Data.Date), clientname ORDER BY clientname, MONTH(Data.Date) ASC
